@@ -1,4 +1,4 @@
- <img width="661" height="377" alt="Whisk_f9670d5600fa6369c01412f9c22d1b62eg-removebg-preview" src="https://github.com/user-attachments/assets/379c1c64-9ac2-41f3-9d15-ad4bef517dcc" />
+Sabor da Casa IA: Pipeline Marmitex com IA
 
 
 Este projeto faz parte do desafio de código da DIO (Digital Innovation One). 
