@@ -1,31 +1,39 @@
- Sabor da Casa IA: Pipeline Marmitex com IA
-Este projeto foi desenvolvido como parte de um desafio de código da DIO (Digital Innovation One). O objetivo é criar um pipeline ETL (Extract, Transform, Load) que utiliza Inteligência Artificial para personalizar o marketing de um restaurante.
+Sabor da Casa IA: Pipeline Marmitex com IA
 
-🚀 Sobre o Projeto
-O sistema automatiza o processo de entender as preferências dos clientes e gerar recomendações altamente personalizadas, utilizando o poder do GPT-4.
+Este projeto faz parte do desafio de código da DIO (Digital Innovation One). 
+O objetivo é criar um pipeline de dados (Extract, Transform, Load) que utiliza Inteligência Artificial para gerar mensagens de marketing personalizadas para clientes de um restaurante.
+
+ 🚀 O Projeto
+O sistema lê uma base de dados de clientes, processa seus gostos alimentares e 
+utiliza o GPT-4 da OpenAI para criar ofertas exclusivas e 
+recomendações personalizadas.
 
 🛠️ Tecnologias Utilizadas
-Python: Linguagem principal do projeto.
-
-Pandas: Manipulação e análise estruturada de dados.
-
-OpenAI API (GPT-4): Inteligência Artificial para geração de conteúdo criativo.
-
-Excel/CSV: Fontes de dados para entrada e saída.
+Python: Linguagem principal.
+Pandas: Para manipulação e análise de dados.
+OpenAI API: Para geração de conteúdo via IA (GPT-4).
+Excel/CSV: Como fonte de dados inicial e final.
 
 🔄 Fluxo do Pipeline (ETL)
-Extração (Extract)
+1. Extração (Extract)
+Leitura do arquivo `clientes_sabor_de_casa_ai.xlsx`. 
+A base contém informações como nome, cidade, perfil alimentar e prato favorito de 10 clientes.
 
-Leitura do arquivo clientes_sabor_de_casa_ai.xlsx.
+ 2. Transformação (Transform)
+Nesta etapa, o código percorre a lista de clientes e envia os dados para a IA.
+Prompt Engineering: Criado para garantir que a IA responda no formato ideal para o negócio.
+Tratamento de Dados: O código foi preparado para lidar com possíveis erros de conexão ou falta de créditos na API, garantindo a resiliência do pipeline.
 
-Base com dados de nome, cidade, perfil alimentar e prato favorito de 10 clientes.
+3. Carregamento (Load)
+Os dados transformados são salvos em um novo arquivo chamado `resultado_final_sabor_de_casa.xlsx`, pronto para ser utilizado pelo time de marketing.
 
-Transformação (Transform)
+ 📊 Como Executar
+1. Clone este repositório.
+2. Certifique-se de ter o Python e o Pandas instalados.
+3. Adicione sua `OPENAI_API_KEY` no script.
+4. Execute o código no Google Colab ou VS Code.
 
-Prompt Engineering: Construção de prompts estratégicos para que a IA gere mensagens no tom de voz ideal para o negócio.
+ 👤 Autora
+Sabrina Fontes 
 
-Tratamento de Erros: Código preparado para lidar com falhas de conexão ou limites da API.
-
-Carregamento (Load)
-
-Exportação das mensagens geradas para um novo arquivo: resultado_final_sabor_de_casa.xlsx.
+> *Nota: O projeto demonstra a integração prática de IA em fluxos de dados reais, focando em escalabilidade e personalização.
