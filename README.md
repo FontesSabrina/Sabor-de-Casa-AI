@@ -1,3 +1,9 @@
+
+<img width="1737" height="592" alt="Gemini_Generated_Image_2nxu092nxu092nxu" src="https://github.com/user-attachments/assets/f7854ca6-2dae-4123-900a-e2f408980c78" />
+
+
+
+
 Sabor da Casa IA: Pipeline Marmitex com IA
 
 
